@@ -504,24 +504,9 @@ void xmprint(const Map map) {
 /* ===================== Rooms & BSP connectivity utils ===================== */
 
 
-static Rect* room_list = NULL;
-static int room_count = 0;
+//static Rect* room_list = NULL;
+//static int room_count = 0;
 
-static void carve_room(Map map, Rect r) {
-    int room_x = r.x + rand() % (r.w / 4 + (r.w/4==0));
-    int room_y = r.y + rand() % (r.h / 4 + (r.h/4==0));
-    int room_w = r.w - (room_x - r.x) * 5;
-    int room_h = r.h - (room_y - r.y) * 5;
-    if (room_w < 3 || room_h < 3) return;
-    for (int y = room_y; y < room_y + room_h; y++) {
-        for (int x = room_x; x < room_x + room_w; x++) {
-            if (y > 0 && y < map.h - 1 && x > 0 && x < map.w - 1) {
-                map.walling[y][x] = ' ';
-            }
-        }
-    }
-    room_list[room_count++] = (Rect){ room_x, room_y, room_w, room_h };
-}
 
 static void create_corridor(Map map, int x1, int y1, int x2, int y2) {
     int x = x1, y = y1;
