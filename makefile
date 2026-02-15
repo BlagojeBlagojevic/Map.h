@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -Wno-misleading-indentation -Oh -ggdb -fsanitize=address -static-libasan -ggdb
+CFLAGS = -Wall -Wextra -Wno-misleading-indentation -Ofast 
 RAYLIBFLAGS = -Iraylib/include raylib/lib/libraylib.a -lGL -lm -lpthread -ldl -lrt -lX11
 TARGET = main
 OBJS = main.o
@@ -8,7 +8,7 @@ $(TARGET): $(OBJS)
 	$(CC) $(OBJS) $(RAYLIBFLAGS) $(CFLAGS) -o $(TARGET)
 
 main.o: main.c
-	$(CC)  -c main.c
+	$(CC) $(CFLAGS) -c main.c
 
 
 
