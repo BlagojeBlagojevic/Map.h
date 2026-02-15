@@ -49,7 +49,7 @@ void RegenerateDungeon(Map *map, int *what)
         case 8:  *map = xmgen_maze(MAP_WIDTH, MAP_HEIGHT, MAP_WIDTH-2, MAP_HEIGHT-2); break;
         case 9:  *map = xmgen_bsp(MAP_WIDTH, MAP_HEIGHT, MIN_ROOM_SIZE); break;
         case 10: *map = xmgen_scatter(MAP_WIDTH, MAP_HEIGHT, MAX_ROOMS, MIN_ROOM_SIZE, MAX_ROOM_SIZE); break;
-        case 11: *map = xmgen_zorbus_like(MAP_WIDTH, MAP_HEIGHT, 500, 60); break;
+        case 11: *map = xmgen_zorbus_like(MAP_WIDTH, MAP_HEIGHT, 500, 90); break;
         case 12: *map = xmgen_hub(MAP_WIDTH, MAP_HEIGHT, 10, MAX_ROOMS, MIN_ROOM_SIZE, MAX_ROOM_SIZE); break;
         case 13: *map = xmgen_winding_path(MAP_WIDTH, MAP_HEIGHT, 20000, 1, 4, 5); break;
         case 14: *map = xmgen_cross_sections(MAP_WIDTH, MAP_HEIGHT, 5, 50); break;
