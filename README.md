@@ -76,24 +76,28 @@ typedef struct {
 - `xmgen_add_lake(Map* map, char tile, int x, int y, int w, int h, float lakePercent)` – Overlay a cellular‑automata lake (or any tile) onto the map.
 - `xmgen_add_enviroment(Map* map, char tile, int x, int y, int w, int h, float lakePercent)` – Similar to lake but only places tile on existing floors.
 
----
-
 
 
 ## License
 
 This library is provided under the **MIT License**. See the `LICENSE` file for details. (If no license is specified, you may want to add one.)
 
----
+
 
 ## Contributing
 
-Pull requests are welcome! If you add a new generator, please follow the naming convention `xmgen_yourname` and include a brief description in the README. For major changes, open an issue first to discuss.
+Pull requests are welcome! If you add a new generator, please follow the naming convention `xmgen_yourname` and include a brief description in the README.
 
----
+## Links
+- https://anderoonies.github.io/2020/03/17/brogue-generation.html
+- https://github.com/glouw/dungen
+- https://www.roguebasin.com/index.php/Basic_BSP_Dungeon_generation
+- https://www.roguebasin.com/index.php/Cellular_Automata_Method_for_Generating_Random_Cave-Like_Levels
+- https://github.com/keesiemeijer/maze-generator
+- https://blog.jrheard.com/procedural-dungeon-generation-drunkards-walk-in-clojurescript
+- https://journal.stuffwithstuff.com/2014/12/21/rooms-and-mazes/
+- https://en.wikipedia.org/wiki/Perlin_noise
 
-## Acknowledgements
-Tbd
 
-*Happy dungeon crawling!* 🗝️
+*Happy dungeon crawling!* 
 
