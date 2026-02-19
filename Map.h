@@ -96,7 +96,7 @@ Map xmgen_winding_path(const int w, const int h, const int max_path_len, const i
 
 Map xmgen_cross_sections(const int w, const int h, const int spacing, const int room_chance);
 
-Map xmgen_rings(const int w, const const int h, const int num_rings, const int ring_spacing, const int room_chance);
+Map xmgen_rings(const int w, const int h, const int num_rings, const int ring_spacing, const int room_chance);
 
 //bUNCH OF PREFABS is defined so change prefabs 
 //Tbd some interface maybe
@@ -1900,7 +1900,7 @@ Map xmgen_cross_sections(const int w, const int h, const int spacing, const int 
 }
 
 
-Map xmgen_rings(const int w, const const int h, const int num_rings, const int ring_spacing, const int room_chance) {
+Map xmgen_rings(const int w, const int h, const int num_rings, const int ring_spacing, const int room_chance) {
     srand((unsigned)time(0));
     Map map = mnew(h, w);
     
